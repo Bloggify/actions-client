@@ -17,8 +17,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
-  "homepage": "https://github.com/IonicaBizau/bloggify-actions-client#readme",
+  "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
+  "homepage": "https://github.com/Bloggify/actions-client#readme",
   "files": [
     "bin/",
     "app/",
@@ -36,9 +36,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/bloggify-actions-client.git"
+    "url": "git+ssh://git@github.com/Bloggify/actions-client.git"
   },
   "bugs": {
-    "url": "https://github.com/IonicaBizau/bloggify-actions-client/issues"
+    "url": "https://github.com/Bloggify/actions-client/issues"
   }
 }
