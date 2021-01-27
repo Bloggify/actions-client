@@ -1,20 +1,23 @@
 "use strict";
 
-const BloggifyActionsClient = require("../lib");
+var BloggifyActionsClient = require("../lib");
 
-
-const app = new BloggifyActionsClient("http://localhost:8080")
+var app = new BloggifyActionsClient("http://localhost:8080");
 
 // Make a get request
 app.get("action.name", {
     query: { id: 2 }
-}).then(({ data }) => {
-    console.log(data)
-})
+}).then(function (_ref) {
+    var data = _ref.data;
+
+    console.log(data);
+});
 
 // Make a post request
 app.post("action.name", {
     name: "PipeOrgansMap"
-}).then(({ data }) => {
-    console.log(data)
-})
+}).then(function (_ref2) {
+    var data = _ref2.data;
+
+    console.log(data);
+});

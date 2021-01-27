@@ -19,14 +19,14 @@ Executes an HTTP(s) request.
 
 #### Params
 
-- **** `opts`: {Object} Contains a set of parameters.
+- **Object** `opts`: Contains a set of parameters.
   - `headers` (Object)    The request headers.
   - `url`     (String)    The access URL.
   - `action`  (Object)    The action name.
   - `method`  (Function)  The request method.
   - `data`    (Object)    The reuqest body (will be JSON-stringified)
   - `query`   (Object)    Querystring parameters to be set in the url.
-- **** `cb`: {Function} The callback function.
+- **Function** `cb`: The callback function.
 
 ### `post(name, data, opts)`
 Executes a POST request.

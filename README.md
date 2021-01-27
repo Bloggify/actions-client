@@ -72,24 +72,27 @@ yarn add bloggify-actions-client
 
 
 ```js
-const BloggifyActionsClient = require("bloggify-actions-client");
+var BloggifyActionsClient = require("bloggify-actions-client");
 
-
-const app = new BloggifyActionsClient("http://localhost:8080")
+var app = new BloggifyActionsClient("http://localhost:8080");
 
 // Make a get request
 app.get("action.name", {
     query: { id: 2 }
-}).then(({ data }) => {
-    console.log(data)
-})
+}).then(function (_ref) {
+    var data = _ref.data;
+
+    console.log(data);
+});
 
 // Make a post request
 app.post("action.name", {
     name: "PipeOrgansMap"
-}).then(({ data }) => {
-    console.log(data)
-})
+}).then(function (_ref2) {
+    var data = _ref2.data;
+
+    console.log(data);
+});
 ```
 
 
@@ -135,14 +138,14 @@ Executes an HTTP(s) request.
 
 #### Params
 
-- **** `opts`: {Object} Contains a set of parameters.
+- **Object** `opts`: Contains a set of parameters.
   - `headers` (Object)    The request headers.
   - `url`     (String)    The access URL.
   - `action`  (Object)    The action name.
   - `method`  (Function)  The request method.
   - `data`    (Object)    The reuqest body (will be JSON-stringified)
   - `query`   (Object)    Querystring parameters to be set in the url.
-- **** `cb`: {Function} The callback function.
+- **Function** `cb`: The callback function.
 
 ### `post(name, data, opts)`
 Executes a POST request.
