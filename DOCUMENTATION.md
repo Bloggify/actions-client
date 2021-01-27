@@ -33,26 +33,26 @@ Executes a POST request.
 
 #### Params
 
-- **** `name`: {String} The action name.
-- **** `data`: {Object} The request body (as an object).
-- **** `opts`: {Object} Additional options (optional).
+- **String** `name`: The action name.
+- **Object** `data`: The request body (as an object).
+- **Object** `opts`: Additional options (optional).
 
 ### `get(name, opts, cb)`
 Executes a GET request.
 
 #### Params
 
-- **** `name`: {String} The action name.
-- **** `opts`: {Object} Additional options (optional).
-- **** `cb`: {Function} The callback function.
+- **String** `name`: The action name.
+- **Object** `opts`: Additional options (optional).
+- **Function** `cb`: The callback function.
 
 ### `url(name, opts)`
 Get the url of the action.
 
 #### Params
 
-- **** `name`: {String} The action name.
-- **** `opts`: {Object} Additional options (optional).
+- **String** `name`: The action name.
+- **Object** `opts`: Additional options (optional).
 
 #### Return
 - **String** The url string.
@@ -62,7 +62,7 @@ Get the url of the WebSocket action.
 
 #### Params
 
-- **** `name`: {String} The action name.
+- **String** `name`: The action name.
 
 #### Return
 - **String** The ws url string.
